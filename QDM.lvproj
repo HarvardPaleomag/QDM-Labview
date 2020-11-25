@@ -67,7 +67,6 @@
 			<Item Name="bk91XX Reset.vi" Type="VI" URL="../VIs/Dependencies/bk91XX.llb/bk91XX Reset.vi"/>
 			<Item Name="calc global ODMR and norm for stack (MW on-off).vi" Type="VI" URL="../VIs/Dependencies/calc global ODMR and norm for stack (MW on-off).vi"/>
 			<Item Name="check if odd or even.vi" Type="VI" URL="../VIs/Dependencies/check if odd or even.vi"/>
-			<Item Name="check if over time cutoff.vi" Type="VI" URL="../VIs/Dependencies/check if over time cutoff.vi"/>
 			<Item Name="coerce width height.vi" Type="VI" URL="../../../../Desktop/QDM_data_acquisition_VIs/coerce width height.vi"/>
 			<Item Name="coil polarity pattern reader.vi" Type="VI" URL="../VIs/Dependencies/coil polarity pattern reader.vi"/>
 			<Item Name="convert 1D image array to 2D image - double input.vi" Type="VI" URL="../VIs/Dependencies/convert 1D image array to 2D image - double input.vi"/>
