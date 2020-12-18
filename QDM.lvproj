@@ -12,8 +12,8 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Front Facing" Type="Folder">
 			<Item Name="Camera_Tester.vi" Type="VI" URL="../VIs/Front Facing/Camera_Tester.vi"/>
-			<Item Name="expt overnight automator 101freqs RT.vi" Type="VI" URL="../VIs/Front Facing/expt overnight automator 101freqs RT.vi"/>
-			<Item Name="run QDM2 expt v2.00 - return data don&apos;t save.vi" Type="VI" URL="../VIs/Front Facing/run QDM2 expt v2.00 - return data don&apos;t save.vi"/>
+			<Item Name="QDM_Data_Integrator.vi" Type="VI" URL="../VIs/Front Facing/QDM_Data_Integrator.vi"/>
+			<Item Name="QDM_Main.vi" Type="VI" URL="../VIs/Front Facing/QDM_Main.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
