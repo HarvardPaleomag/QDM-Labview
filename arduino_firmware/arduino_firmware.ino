@@ -10,20 +10,20 @@ int pins[4] = {5, 6, 7, 13};
 
 void setup() {
   // initialize serial communication:
-  Serial.begin(9600);
+  Serial.begin(115200);
   // initialize the X,Y,Z pinw as an output:
   pinMode(5, OUTPUT);
   pinMode(6, OUTPUT);
   pinMode(7, OUTPUT);
   pinMode(13, OUTPUT); // LED pin for testing
 
-  Serial.println("Quantum Diamond Microscope Firmware 2021.0.2"); // so I can keep track of what is loaded
-  Serial.println("============================================"); // so I can keep track of what is loaded
-  Serial.println(">> by Mike Volk"); // so I can keep track of what is loaded
-  Serial.println(">>   X: pin 6 --> setting LOW");
-  Serial.println(">>   Y: pin 7 --> setting LOW");
-  Serial.println(">>   Z: pin 8 --> setting LOW");
-  Serial.println(">> ALL: pin 6,7,8");
+//  Serial.println("Quantum Diamond Microscope Firmware 2021.0.2"); // so I can keep track of what is loaded
+//  Serial.println("============================================"); // so I can keep track of what is loaded
+//  Serial.println(">> by Mike Volk"); // so I can keep track of what is loaded
+//  Serial.println(">>   X: pin 6 --> setting LOW");
+//  Serial.println(">>   Y: pin 7 --> setting LOW");
+//  Serial.println(">>   Z: pin 8 --> setting LOW");
+//  Serial.println(">> ALL: pin 6,7,8");
 
   digitalWrite(6, LOW);
   digitalWrite(7, LOW);
@@ -51,17 +51,17 @@ void loop() {
       pin = inMessage.toInt();
       for (int i = 0; i < 4; i++) {
         if (pins[i] == pin) {
-          Serial.println(">> pin found:" + String(pin));
+//          Serial.println(">> pin found:" + String(pin));
           pinFound = 1;
           toSet[i] = pin;
           break;
         }
       }
       if (pinFound == 0) {
-        Serial.println(">> pin " + String(pin) + " not available");
+//        Serial.println(">> pin " + String(pin) + " not available");
       }
     }
-    Serial.println(">> pins to set: (" + String(pinFound) + ") {" + String(toSet[0]) + ", " + String(toSet[1]) + ", " + String(toSet[2]) + ", " + String(toSet[3]) + "}");
+//    Serial.println(">> pins to set: (" + String(pinFound) + ") {" + String(toSet[0]) + ", " + String(toSet[1]) + ", " + String(toSet[2]) + ", " + String(toSet[3]) + "}");
     // iterate over toSet
     if (pinFound == 1){
       for (int i = 0; i < 4; i++) {
@@ -71,11 +71,11 @@ void loop() {
           if (pins[n] == pin) {
             int state = digitalRead(pin);
             if (state == 0){
-              Serial.println(">> setting pin: " + String(pin) + " --> HIGH");
+//              Serial.println(">> setting pin: " + String(pin) + " --> HIGH");
               digitalWrite(pin, HIGH);
               }
             else{
-              Serial.println(">> setting pin: " + String(pin) + " --> LOW");
+//              Serial.println(">> setting pin: " + String(pin) + " --> LOW");
               digitalWrite(pin, LOW);
               }
             break;
